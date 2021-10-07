@@ -1,0 +1,12 @@
+<div xmlns:th="http://www.thymeleaf.org">
+  <div class= "card-deading">
+    <b class="glyphicon glyphicon-briefcase"> Danh muc</b>
+  </div>
+<ul class="list-group" >
+<li th:each="c:${cates}" class="list-group-item">
+ <a  th:href="@{|/product/list?cid=${c.id}|}" >[[${c.name}]]</a>
+</li>
+   
+
+  </ul>
+</div>
